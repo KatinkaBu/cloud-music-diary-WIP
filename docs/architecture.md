@@ -1,4 +1,4 @@
-## Cloud Music Diary – Architecture Overview
+## Cloud Music Diary - System Architecture 
 
 
 ## Current Structure
@@ -83,23 +83,27 @@ Phase 2:
 - Migration to AWS RDS PostgreSQL
 - Optional S3 bucket for user-uploaded images or static files
 
+---
 
-## Infrastructure Roadmap
+## Cloud Music Diary - Infrastructure Roadmap
 
-Phase 1:
+Phase 1 - Local:
 - Local development on macOS with Flask + SQLite
 
-Phase 2:
+Phase 2 - Cloud:
 - Deploy Flask app on AWS (EC2 or Elastic Beanstalk)
 - RDS PostgreSQL for persistent storage
 - S3 for static assets (optional)
 - IAM roles for secure access
 
-Phase 3 (Optional):
+Phase 3 - Optional, advanced infra:
 - Docker containerization
 - Terraform for infrastructure as code
 - CI/CD pipeline with GitHub Actions
 
+---
+
+## Cloud Music Diary - Project Status
 
 ## Current State
 - Repository initialized
@@ -108,14 +112,23 @@ Phase 3 (Optional):
 - README updated with screenshot and short project status
 - Issues for upcoming steps created
 - Core Flask folder structure completed (routes, templates, static, tests fully initialized) and first route renders successfully in the browser.
+- Added GitHub labels for workflow organization.
 
 
 ## Planned Next Steps
-- Add GitHub labels for workflow organization
 - Implement Issue 2: base HTML template
 - Implement Issue 3: form for mood + track input
 - Implement Issue 4: local SQLite integration
 - Implement Issue 5: Spotify API (PoC)
+- Implement Issue 6: Create route to receive and display form data
+- Implement Issue 7: README Update + Screenshot + Architektur-Update
 - Create deployment pipeline:  
   - Deploy version to Google Cloud  
   - Deploy version to Azure
+ 
+## Stretch Ideas (Post-MVP)
+- Mood graph (Chart.js / Plotly)
+- Album covers
+- Authentication
+- Docker (see 'Phase 3 - Optional, advanced infra')
+- CI/CD (see 'Phase 3 - Optional, advanced infra')
