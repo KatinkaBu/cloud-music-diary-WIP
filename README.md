@@ -70,6 +70,8 @@ Development began in November 2025 and is ongoing.
 - First route rendering successfully
 - Project structure and documentation initialized
 - GitHub issues and labels organized
+- Base template implemented (Jinja template inheritance)
+- Index page connected to base template
 ![First UI Screenshot](docs/screenshots/Cloud-Music-Diary-SS-1.png)
 
 **Next:**
