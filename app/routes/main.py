@@ -1,7 +1,17 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 
 main_bp = Blueprint('main', __name__)
 
-@main_bp.route("/")
+@main_bp.route("/", methods=["GET","POST"])
 def index():
-    return render_template("index.html")
+
+    if request.method == "POST":
+        mood = request.form.get("mood")
+        track = request.form.get("track")
+        artist = request.form.get("artist")
+
+        print("Mood:", mood)
+        print("Track:", track)
+        print("by", artist)
+
+    return render_template("form.html")

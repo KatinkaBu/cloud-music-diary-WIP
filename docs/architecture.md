@@ -113,11 +113,10 @@ Phase 3 - Optional, advanced infra:
 - Issues for upcoming steps created
 - Core Flask folder structure completed (routes, templates, static, tests fully initialized) and first route renders successfully in the browser.
 - Added GitHub labels for workflow organization.
-
+- Issue 2 completed: Base template (base.html) implemented using Jinja template inheritance, index page now extends the base template & layout renders correctly in the browser via Flask
+- Issue 3 completed: Form (mood, track, artist) added; POST request received and logged in Flask (see Screeshots UI & terminal).
 
 ## Planned Next Steps
-- Implement Issue 2: base HTML template
-- Implement Issue 3: form for mood + track input
 - Implement Issue 4: local SQLite integration
 - Implement Issue 5: Spotify API (PoC)
 - Implement Issue 6: Create route to receive and display form data

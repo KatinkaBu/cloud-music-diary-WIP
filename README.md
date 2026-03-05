@@ -72,10 +72,10 @@ Development began in November 2025 and is ongoing.
 - GitHub issues and labels organized
 - Base template implemented (Jinja template inheritance)
 - Index page connected to base template
+- Added first input form (mood, track, artist) with working POST submission (debug print).
 ![First UI Screenshot](docs/screenshots/Cloud-Music-Diary-SS-1.png)
 
 **Next:**
-- Implement form submission
 - Add SQLite persistence
 - Build timeline view
 

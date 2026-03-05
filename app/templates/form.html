@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Your track today:</h2>
+
+<form method="POST">
+
+<label>Mood</label>
+<input type="text" name="mood">
+
+<label>Track</label>
+<input type="text" name="track">
+
+<label>by</label>
+<input type="text" name="artist">
+
+<button type="submit">Submit</button>
+
+</form>
+
+{% endblock %}
