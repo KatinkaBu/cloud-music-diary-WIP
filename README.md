@@ -74,6 +74,7 @@ Development began in November 2025 and is ongoing.
 - Index page connected to base template
 - Added first input form (mood, track, artist) with working POST submission (debug print).
 ![First UI Screenshot](docs/screenshots/Cloud-Music-Diary-SS-1.png)
+![First Form UI Screenshot](docs/screenshots/Cloud-Music-Diary_Form-UI.png)
 
 **Next:**
 - Add SQLite persistence
