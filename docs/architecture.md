@@ -23,6 +23,8 @@ cloud-music-diary/
 │   └── screenshots/
 │       ├── Cloud-Music-Diary-SS-1.png
 │       └── Cloud-Music-Diary-SS-2.png
+│       └── Cloud-Music-Diary_Form-UI.png
+│       └── Cloud-Music-Diary_Debug-Print_POST-Proof
 └── tests/
     └── test_basic.py
 ```
@@ -114,13 +116,13 @@ Phase 3 - Optional, advanced infra:
 - Core Flask folder structure completed (routes, templates, static, tests fully initialized) and first route renders successfully in the browser.
 - Added GitHub labels for workflow organization.
 - Issue 2 completed: Base template (base.html) implemented using Jinja template inheritance, index page now extends the base template & layout renders correctly in the browser via Flask
-- Issue 3 completed: Form (mood, track, artist) added; POST request received and logged in Flask (see Screeshots UI & terminal).
+- Issue 3 completed: Form (mood, track, artist) added; POST request received and logged in Flask (see Screenshots UI & terminal).
 
 ## Planned Next Steps
 - Implement Issue 4: local SQLite integration
 - Implement Issue 5: Spotify API (PoC)
 - Implement Issue 6: Create route to receive and display form data
-- Implement Issue 7: README Update + Screenshot + Architektur-Update
+- Implement Issue 7: README Update + Screenshot + Architecture-Update
 - Create deployment pipeline:  
   - Deploy version to Google Cloud  
   - Deploy version to Azure
