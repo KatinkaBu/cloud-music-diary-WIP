@@ -5,6 +5,25 @@ main_bp = Blueprint('main', __name__)
 
 DATABASE = "database.db"
 
+def init_db():
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS entries (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        date TEXT,
+        mood TEXT,
+        track TEXT,
+        artist TEXT
+    )
+    """)
+
+    conn.commit()
+    conn.close()
+
+init_db()
+
 @main_bp.route("/", methods=["GET","POST"])
 def index():
 
