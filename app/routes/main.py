@@ -28,12 +28,22 @@ init_db()
 def index():
 
     if request.method == "POST":
-        mood = request.form.get("mood")
-        track = request.form.get("track")
-        artist = request.form.get("artist")
+    mood = request.form.get("mood")
+    track = request.form.get("track")
+    artist = request.form.get("artist")
 
-        print("Mood:", mood)
-        print("Track:", track)
-        print("by", artist)
+    if not mood or not track:
+        return render_template("form.html")
+
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    INSERT INTO entries (date, mood, track, artist)
+    VALUES (datetime('now'), ?, ?, ?)
+    """, (mood, track, artist))
+
+    conn.commit()
+    conn.close()
 
     return render_template("form.html")
